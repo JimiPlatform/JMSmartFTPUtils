@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.libraries = ["c++"]
   s.requires_arc = true
   s.source = { :git => "https://github.com/JimiPlatform/JMSmartFTPUtils.git", :tag => "v#{s.version}" }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.xcconfig = { 'VALID_ARCHS' => 'armv7 armv7s arm64 arm64e x86_64' }
 
   s.ios.deployment_target    = '9.0'
   s.ios.vendored_framework   = 'JMSmartFTPUtils.framework'
