@@ -1,0 +1,6 @@
+framework module JMSmartFTPUtils {
+  umbrella header "JMSmartFTPUtils.h"
+
+  export *
+  module * { export * }
+}
