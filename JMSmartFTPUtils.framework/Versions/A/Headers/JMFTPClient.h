@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, JMFTPClientState) {
 
 @property(nonatomic,strong) JMFTPUserInfo *userInfo;
 @property(nonatomic,weak) id<JMFTPClientDelegate> delegate;
+@property(nonatomic,assign) NSInteger tag;
 
 - (instancetype)initWithUserInfo:(nonnull JMFTPUserInfo *)userInfo;
 
