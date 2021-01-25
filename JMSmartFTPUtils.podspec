@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source = { :git => "https://github.com/JimiPlatform/JMSmartFTPUtils.git", :tag => "v#{s.version}" }
   s.xcconfig = { 'VALID_ARCHS' => 'armv7 armv7s arm64 arm64e x86_64' }
+  s.static_framework = true
 
   s.ios.deployment_target    = '9.0'
   s.ios.vendored_framework   = 'JMSmartFTPUtils.framework'
