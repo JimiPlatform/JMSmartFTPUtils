@@ -63,8 +63,8 @@ typedef NS_ENUM(NSInteger, JMFTPClientState) {
 /// @param completion 结果回调
 - (void)moveFileFromPath:(nonnull NSString *)fromPath toPath:(nonnull NSString *)toPath completion:(void(^)(BOOL isSuccess))completion;
 
-/// 删除文件
-/// @param filePath 文件路径
+/// 删除文件或文件夹
+/// @param filePath 文件/文件夹路径
 /// @param completion 结果回调
 - (void)deleteFileWithPath:(nonnull NSString *)filePath completion:(void(^)(BOOL isSuccess))completion;
 
