@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "JMSmartFTPUtils"
-  s.version = "1.0.2"
+  s.version = "1.0.3"
   s.summary = "Provide FTP for Jimi iOS Platform."
   s.license = {"type"=>"Apache License 2.0", "file"=>"LICENSE"}
   s.authors = {"Eafy"=>"lizhijian_21@163.com"}
@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target    = '9.0'
   s.ios.vendored_framework   = 'JMSmartFTPUtils.framework'
   s.vendored_libraries = 'JMSmartFTPUtils.framework/**/*.a'
+  s.static_framework = true
 
 end
 

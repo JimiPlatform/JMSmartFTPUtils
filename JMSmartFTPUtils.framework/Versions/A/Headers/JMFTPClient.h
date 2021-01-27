@@ -32,7 +32,7 @@ typedef NS_ENUM(NSInteger, JMFTPClientState) {
 
 @property(nonatomic,strong) JMFTPUserInfo *userInfo;
 @property(nonatomic,weak) id<JMFTPClientDelegate> delegate;
-@property(nonatomic,assign) NSInteger tag;
+@property(nonatomic,copy) NSString *tag;
 
 - (instancetype)initWithUserInfo:(nonnull JMFTPUserInfo *)userInfo;
 
@@ -96,8 +96,8 @@ typedef NS_ENUM(NSInteger, JMFTPClientState) {
 - (void)didFtpClient:(JMFTPClient *)client progress:(NSProgress *)progress;
 
 /// 上传下载状态回调
-/// @param start 0为成功，不为零则是错误回调
-- (void)didFtpClient:(JMFTPClient *)client state:(JMFTPClientState)start;
+/// @param state 0为成功，不为零则是错误回调
+- (void)didFtpClient:(JMFTPClient *)client state:(JMFTPClientState)state;
 
 @end
 
