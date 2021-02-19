@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "JMSmartFTPUtils"
-  s.version = "1.0.4"
+  s.version = "1.0.5"
   s.summary = "Provide FTP for Jimi iOS Platform."
   s.license = {"type"=>"Apache License 2.0", "file"=>"LICENSE"}
   s.authors = {"Eafy"=>"lizhijian_21@163.com"}
